@@ -26,12 +26,14 @@ public class Exam {
         System.out.println("1. ODD or EVEN numbers");
         System.out.print("Enter the last two digits of your student number: ");
         int lastTwoDigits = scan.nextInt();
-        if (lastTwoDigits % 2 == 0){
-            System.out.println("EVEN");
-        }
-        else {
-            System.out.println("ODD");
-        }
+            if (lastTwoDigits % 2 == 0)
+                {
+                    System.out.println("EVEN");
+                }
+            else 
+                {
+                    System.out.println("ODD");
+                }
         // ==============================================================================
 
         // 2. Create a method that will:
@@ -181,13 +183,13 @@ public class Exam {
 
             switch (specialization2){
                 case "DF":
-                System.out.print("Valid");
+                System.out.println("Valid");
                 break;
                 case "ML":
-                System.out.print("Valid");
+                System.out.println("Valid");
                 break;
                 default:
-                System.out.print("Invalid");
+                System.out.println("Invalid");
                 break;
             }
             break;
@@ -261,7 +263,7 @@ public class Exam {
         else {
             System.out.println("Invalid");
         }
-         // Programming competition/Job interview level question (20 points)
+        // Programming competition/Job interview level question (20 points)
 
         // 11. Mystery method :-)
 
@@ -279,27 +281,33 @@ public class Exam {
         int count = 0;
         int count2 = 0;
         int count3 = 0;
-        while (count != n){
-            count++;
-            System.out.println(count);
-            if (count % 2 != 0){
-                count2 = count;
-                count2 = count2 * -1;
-                count3 = count2 + count3;
-                count2 = 0;
-            }
-            if (count % 2 == 0){
-                count3 = count3 + count;
-            }
+        while (count != n)
+            {
+                count++;
+                System.out.println(count);
+
+                if (count % 2 != 0)
+                    {
+                        count2 = count;
+                        count2 = count2 * -1;
+                        count3 = count2 + count3;
+                        count2 = 0;
+                    }
+                if (count % 2 == 0)
+                    {
+                        count3 = count3 + count;
+                    }
             }
             System.out.println(count3);
-        }
+        
         
         
         // Close scanner
         scan.close();
-    
-    static void helloWorld(){
-        System.out.println("Hello World!");
     }
+    
+    static void helloWorld()
+        {
+            System.out.println("Hello World!");
+        }
 }
